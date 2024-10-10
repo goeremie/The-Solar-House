@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+          <!-- This fulfills requirement 5.1 (e)-->
+   <meta charset="utf-8" />
+   <meta name="description" content="Solar Energy Product Offers">
+   <meta name= "author" content= "Gabriel Eremie">
+   <meta name = "keywords" content= "Deal, Buy, Offers"/>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Solar House Offers</title>
+   <script src="offers.js"></script>  
+   <link href="offers.css" rel="stylesheet" />
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libre+Franklin:ital@1&family=Lobster&family=Prompt:ital,wght@1,200&family=Rajdhani&display=swap" rel="stylesheet">
+</head>
+
+<body>
+     <header>
+            <div>
+                <!-- This fulfills requirement 5.1 (b)-->
+                <a href = "index.html"><img src = "thesolarhouse.png" alt = "The Solar House" class= "logo"/></a>
+                <nav class="container">
+                    <ul class= "container">
+                        <li><a href ="index.html" class= "container">Home</a></li>
+                        <li><a href ="products.html" class= "container">Products</a></li>
+                        <li><a href ="offers.html" class= "container">Offers</a></li>
+                        <li><a href ="charity.html" class= "container">Charity</a></li>
+                        <li><a href ="crossreference.html" class= "container">Cross Reference</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    
+    <div class="flex-container">
+    <article>
+            <h1>Current Offers</h1>
+            <section>
+            <h1>10% off deal!</h1>
+            <p>YELOMIN Portable Solar-Powered Bank<br>&yen;116.99</p>
+            </section>
+            <section>
+            <h1>Buy 1 pay 50% for 1 deal!</h1>
+            <p>Timex Men's Expedition Gallatin Solar-Powered Watch<br>&yen;59.99</p>
+            </section>
+            <section>
+            <h1>Buy 2 get 1 for free deal!</h1>
+            <p>Lattis Ellipse Keyless Smart Solar Bike Lock<br>&yen;71.98</p>
+            </section>
+            <section>
+            <h1>Buy 1 get a $50 gift card deal!</h1>
+            <p>ACOPOWER 150Wh Portable Solar Generator With 50W Solar Panel Combo<br>&yen;355.75</p>
+            </section>
+    </article>
+    <div id="countdown"></div>
+    </div> 
+ 
+    
+  
+    
+    <!-- This fulfills requirement 5.6 (a)-->
+       
+
+    <form action="/subscribe" method="post" onsubmit="return validateForm()">
+        <h2>Subscribe for Product Updates</h2>
+        <label for="email">Email Address:</label>
+          <!-- This fulfills requirement 5.3 (a)-->
+        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+        <span id="emailError" style="color: red;"></span>
+        
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+        <span id="phoneError" style="color: red;"></span>
+        
+        <label for="terms">I agree to the terms and conditions</label>
+        <input type="checkbox" id="terms" name="terms" required>
+        <button type="submit" onclick="showAlert()" class="subscribe">Subscribe</button>
+    </form>
+   
+    <footer id="footer"> 
+              <!-- This fulfills requirement 5.1 (d)-->
+        &copy;&nbsp; 2001-2023. The Solar House. All Rights Reserved. &nbsp;&copy;
+        
+         <!-- This fulfills requirement 5.1 (f)-->
+        <div class="footer-links">
+            <a href="tel: +1 778-512-4454">Call Us</a>
+            <a href="mailto: gabrieleremie100@gmail.com">Email Us</a>
+        </div><!-- This fulfills requirement 5.1 (g)-->
+        <span id="update-date"></span>
+    </footer>
+    <script>
+        const lastUpdatedElement = document.getElementById('update-date');
+        const siteFooter = document.getElementById('footer');
+            
+        const lastUpdateDate = new Date().toLocaleDateString('en-US', {year: 'numeric', month: 'long', day: 'numeric'});
+        lastUpdatedElement.textContent = lastUpdateDate;
+    </script>
+    <script>
+        function showAlert() {
+            window.alert('You have subscribed for product updates!');
+        }
+    </script>
+    <script>
+        const lastUpdatedElement = document.getElementById('update-date');
+        const siteFooter = document.getElementById('footer');
+
+        const lastUpdateDate = new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+        lastUpdatedElement.textContent = lastUpdateDate;
+
+        function validateForm() {
+            // Validate email
+            const email = document.getElementById('email').value;
+            const emailError = document.getElementById('emailError');
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                emailError.textContent = 'Invalid email address';
+                return false;
+            } else {
+                emailError.textContent = '';
+            }
+
+            // Validate phone number
+            const phone = document.getElementById('phone').value;
+            const phoneError = document.getElementById('phoneError');
+            const phoneRegex = /^\d{10}$/; 
+            if (!phoneRegex.test(phone)) {
+                phoneError.textContent = 'Invalid phone number';
+                return false;
+            } else {
+                phoneError.textContent = '';
+            }
+
+            // Validate terms and conditions
+            const terms = document.getElementById('terms');
+            const termsError = document.getElementById('termsError');
+            if (!terms.checked) {
+                termsError.textContent = 'You must agree to the terms and conditions';
+                return false;
+            } else {
+                termsError.textContent = '';
+            }
+
+            return true;
+        }
+
+        function showAlert() {
+            window.alert('You have subscribed for product updates!');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,209 @@
+@charset "utf-8";
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+input:hover,
+select:hover,
+textarea:hover {
+    border-color: #3498db;
+}
+
+
+
+button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: #f8f8f8 0.3s ease;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+body{
+    background-image: url(bi.png);
+    margin: 0;
+    font-weight: 100;
+    background-size: contain;
+}
+
+article{ /*This fulfills requirement 5.2 (f)*/
+    width: 50%;
+    margin-top: 50px;
+    /*This fulfills requirement 5.2 (f)*/
+    text-shadow: 2px 2px 4px rgba(12, 62, 101, 0.5);
+    font-weight: 100;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+article h1 , p{
+    color: rgb(12, 62, 101);
+}
+/*This fulfills requirement 5.2 (a)*/
+form {
+    padding: 5px 25px 25px 25px;
+    clear: both;
+    width: 40%;
+    background-color: #f8f8f8; /*This fulfills requirement 5.3 (b)*/
+    margin: 20px auto; /*This fulfills requirement 5.7 (c)*/
+    max-width: 600px;
+    border-radius: 8px;
+    /*This fulfills requirement 5.2 (f)*/
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /*This fulfills requirement 5.2 (c)*/
+    display: block;
+}
+
+
+/*This fulfills requirement 5.2 (a)*/
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30%;
+}
+
+footer {
+    color: hsla(188, 32%, 79%, 1);  /*This fulfills requirement 5.2 (c)*/
+    background-color: rgb(12, 62, 101);
+    text-align: center;
+    width: 100%;
+    clear: both;
+}
+
+.footer-links a {
+    color: rgb(182, 218, 221);
+    text-decoration: none;
+    margin-right: 10px; 
+}
+
+.footer-links a:last-child {
+    margin-right: 0;
+}
+#countdown {
+    color: rgb(182, 218, 221);
+    background-color: rgb(12, 62, 101);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    display: inline-block;
+    line-height: 350px;
+    margin-top: 50px;
+    height: auto;
+    text-align: center;
+    font-size: 35px;
+    border-style: dotted;
+    border-width: 15px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer p{
+    text-align: center;
+}
+
+/*This fulfills requirement 5.2 (c)*/
+.container { 
+  text-align: center;
+  color: rgba(12,62,101,1);
+}
+
+.container li {
+    display: inline-block;
+    margin: 0;
+    margin-right: 10px;
+    margin-left: auto;
+}
+
+.container a{
+    text-decoration: none;
+}
+/*This fulfills requirement 5.2 (d)*/
+.container:link{
+    color: rgba(12,62,101,1);
+}
+
+.container:visited{
+    color: rgba(12,62,101,1);
+}
+
+.container:hover{
+    color: rgb(253,255,45);
+}
+
+.container:focus{
+    color: rgb(253,255,45);
+}
+
+.container:active{
+    color: rgb(253,255,45);
+}
+
+h2{
+    margin-top: 20px;
+}
+
+/*This fulfills requirement 5.3 (c)*/
+input[type="email"]:focus,
+input[type="tel"]:focus,
+button:focus {
+    border: 2px solid #0c3e65;
+    outline: none;
+}
+
+span {
+    display: block;
+}
+
+span[style^="color: red;"] {
+    color: red;
+    font-size: 14px;
+}
+
+label[for="terms"] {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+label[for="terms"] input {
+    margin-right: 5px;
+}
+.subscribe{
+    background-color: #0c3e65;
+}
+
+.subscribe:hover{
+    background-color: #FDFF2D;
+    color: #0c3e65;
+}

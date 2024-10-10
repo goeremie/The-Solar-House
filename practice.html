@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .product {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+            width: 300px;
+            display: inline-block;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .purchase-container {
+            margin-top: 10px;
+        }
+
+        .purchase-button {
+            background-color: #3498db;
+            color: #fff;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .description {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Products</h1>
+
+    <div class="product">
+        <h2>Timex Men's Expedition Gallatin Solar-Powered Watch</h2>
+        <img src="watch.jpg" alt="watch">
+        <p>Price: &yen;39.99</p>
+        <div class="description">
+            <p>A 550 revolutionary watch that you can charge while you wear. The small solar panels enable it to run purely on solar, thus reducing battery waste and making a more convenient watch-experience for you.</p>
+        </div>
+        <div class="purchase-container">
+            <label for="quantity1">Quantity:</label>
+            <select id="quantity1">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+        </div>
+        <button class="purchase-button" onclick="purchase('quantity1')">Reserve</button>
+    </div>
+
+    <div class="product">
+        <h2>To-Go Electric Wall SunPort</h2>
+        <img src="sunport.jpeg" alt="sunport">
+        <p>Price: &yen;27.99</p>
+        <div class="description">
+            <p>This to-go electric wall port is perfect for charging on a day-time flight or just simply out at a coffee shop window, this port will stick to any wall or window and, once exposed to sunlight, will provide you energy to charge your phone, computer, or anything else you need to charge on the go.</p>
+        </div>
+        <div class="purchase-container">
+            <label for="quantity2">Quantity:</label>
+            <select id="quantity2">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+        </div>
+        <button class="purchase-button" onclick="purchase('quantity2')">Reserve</button>
+    </div>
+
+    <div class="product">
+        <h2>Lattis Ellipse Keyless Smart Solar Bike Lock</h2>
+        <img src="bikelock.jpg" alt="bike-lock">
+        <p>Price: &yen;35.99</p>
+        <div class="description">
+            <p>This Bike Lock is made to keep your bike safe and secure. Charged by the sun the lock is made with 17mm forged steel and features a dual locking mechanism to fend off thieves. If someone tries to tamper with the bike lock, you'll receive an alert via Bluetooth on your phone. To remove the lock, just place your phone near it, and it will automatically unlock. There is a capacitive touchpad to enter a code as a backup as well.</p>
+        </div>
+        <div class="purchase-container">
+            <label for="quantity3">Quantity:</label>
+            <select id="quantity3">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+        </div>
+        <button class="purchase-button" onclick="purchase('quantity3')">Reserve</button>
+    </div>
+    
+    <div class="product">
+        <h2>YELOMIN Portable Solar-Powered Bank</h2>
+        <img src="powerbank.jpg" alt="power-bank">
+        <p>Price: &yen;129.99</p>
+        <div class="description">
+            <p>This 20,00mAh cell can completely recharge a smartphone three to five times depending on the model. Two built in USB output plugs to charge 2 phones simultaneously. When power bank is depleted just set it near a window to recharge. LED lights will indicate when the solar panel is working and the battery's status. Also sports a flashlight with three different modes for functionality.</p>
+        </div>
+        <div class="purchase-container">
+            <label for="quantity4">Quantity:</label>
+            <select id="quantity4">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+        </div>
+        <button class="purchase-button" onclick="purchase('quantity4')">Reserve</button>
+    </div>
+    
+    <div class="product">
+        <h2>Soliom S60 Solar Outdoor Security Camera</h2>
+        <img src="soliom.jpg" alt="camera">
+        <p>Price: &yen;199.99</p>
+        <div class="description">
+            <p>This completely wireless camera is made to withstand extreme temperature swings and is waterproof. When the camera detects motion, you'll receive a notification on your phone. Also, at night, built-in IR LED lights will help brighten up what's happening outside.</p>
+        </div>
+        <div class="purchase-container">
+            <label for="quantity5">Quantity:</label>
+            <select id="quantity5">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+        </div>
+        <button class="purchase-button" onclick="purchase('quantity5')">Reserve</button>
+    </div>
+    
+    <div class="product">
+        <h2>LECLSTAR Solar Motion Sensor Outdoor</h2>
+        <img src="sensor.jpg" alt="sensor">
+        <p>Price: &yen;52.99</p>
+        <div class="description">
+            <p>The LECLSTAR Solar Motion Sensor Outdoor Light is easy to mount with the included sticky pad or two screws. Waterproof and made to withstand all types of weather, the light features 268 bright LEDs that provide up to 1,800 lumens of light. The built-in motion sensor can detect movement up to 26 feet away and with a 120-degree field and will automatically turn on the light for 30 seconds. Will turn off automatically when no motion is detected.</p>
+        </div>
+        <div class="purchase-container">
+            <label for="quantity6">Quantity:</label>
+            <select id="quantity6">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+        </div>
+        <button class="purchase-button" onclick="purchase('quantity6')">Reserve</button>
+    </div>
+    
+    <div class="product">
+        <h2>ACOPOWER 150Wh Portable Solar Generator With 50W Solar Panel Combo</h2>
+        <img src="panel.jpg" alt="panel">
+        <p>Price: &yen;355.99</p>
+        <div class="description">
+            <p>The ACOPOWER 150Wh Portable Solar Generator with 50W Solar Panel Combo is a great way to harness solar power around the house. The generator sports two USB output plugs, two AC outlets, and three DC ports that can adapt to different equipment. While it won't power large home electronics, it can provide enough juice to charge electrics and operate smaller appliances like a fan or lamp. An included solar panel can completely charge the generator and its 40,800mAh battery in six to eight hours and folds up when not in use. The generator can also charge in a car or through a regular wall socket as well.</p>
+        </div>
+        <div class="purchase-container">
+            <label for="quantity7">Quantity:</label>
+            <select id="quantity7">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+        </div>
+        <button class="purchase-button" onclick="purchase('quantity7')">Reserve</button>
+    </div>
+    
+    <div class="product">
+        <h2>Logitech K750 Solar Wireless Keyboard</h2>
+        <img src="keyboard.png" alt="keyboard">
+        <p>Price: &yen;49.99</p>
+        <div class="description">
+            <p>Logitech's K750 Solar Wireless Keyboard charges from the sun or artificial light and will keep a charge for up to three months in total darkness. Measuring in at just 1/3-inch thick, it can be used at home on any desk. Paired with being wireless it improves the usability of this product.</p>
+        </div>
+        <div class="purchase-container">
+            <label for="quantity8">Quantity:</label>
+            <select id="quantity8">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+        </div>
+        <button class="purchase-button" onclick="purchase('quantity8')">Reserve</button>
+    </div>
+    
+    <div class="product">
+        <h2>Goal Zero Torch 250 Flashlight</h2>
+        <img src="flashlight.jpg" alt="flashlight">
+        <p>Price: &yen;119.99</p>
+        <div class="description">
+            <p>The Goal Zero Torch 250 Flashlight takes power from a built-in solar panel. If you can't get near the sun, there is a hand crank or USB cord to use as a backup. You can as well select from three different options on the 250-lumen flashlight, floodlight, or red emergency light. On a full charge, the flashlight can run for up to 48 hours. Furtehrmore, you can also charge a smartphone using the built-in USB plug.</p>
+        </div>
+        <div class="purchase-container">
+            <label for="quantity9">Quantity:</label>
+            <select id="quantity9">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+        </div>
+        <button class="purchase-button" onclick="purchase('quantity9')">Reserve</button>
+    </div>
+    
+    <div class="product">
+        <h2>Eton Rugged Rukus Solar Powered Wireless Bluetooth Speaker</h2>
+        <img src="speaker.jpg" alt="speaker">
+        <p>Price: &yen;219.99</p>
+        <div class="description">
+            <p>The Eton Rugged Rukus Solar Powered Wireless Bluetooth Speaker is highly portable and stores enough power to play music for eight hours on a full charge. The solar panel fully charges the speaker in less than five hours of direct sunlight.It will also charge your smartphone via the USB port. The speaker is as well water-resistant, making it great for poolside listening and social events.</p>
+        </div>
+        <div class="purchase-container">
+            <label for="quantity10">Quantity:</label>
+            <select id="quantity10">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+        </div>
+        <button class="purchase-button" onclick="purchase('quantity10')">Purchase</button>
+    </div>
+
+    <script>
+        function purchase(quantityId) {
+            const quantity = document.getElementById(quantityId).value;
+            alert(`${quantity} of these product(s) will be reserved for you!`);
+        }
+    </script>
+
+</body>
+
+</html>
+
+
+

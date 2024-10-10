@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+      <!-- This fulfills requirement 5.1 (e)-->
+    <meta charset="utf-8" />
+    <meta name="description" content="Solar Energy Products">
+    <meta name= "author" content= "Gabriel Eremie">
+    <meta name = "keywords" content= "Solar, Energy, Technology"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar House Products</title>
+
+    <link href="products.css" rel="stylesheet"/>
+</head>
+
+<body>
+    <header>
+        <div>
+            <!-- This fulfills requirement 5.1 (b)-->
+            <a href="index.html"><img src="thesolarhouse.png" alt="The Solar House" class="logo"/></a>
+            <nav class="container">
+                <ul class="container">
+                    <li><a href="index.html" class="container">Home</a></li>
+                    <li><a href="products.html" class="container">Products</a></li>
+                    <li><a href="offers.html" class="container">Offers</a></li>
+                    <li><a href="charity.html" class="container">Charity</a></li>
+                    <li><a href="crossreference.html" class="container">Cross Reference</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="image-container">
+        <img src="home.jpg" alt="Charity">
+    </div>
+    
+    <div class = "product-container">
+     <div class="product" onclick="watchPopup()">
+        <h2>Solar-Powered Watch</h2>
+          <!-- This fulfills requirement 5.1 (b)-->
+        <img src="watch.jpg" alt="watch">
+     </div>
+     <div class="product" onclick="portPopup()">
+        <h2>To-Go Electric Wall SunPort</h2>
+         <!-- This fulfills requirement 5.1 (b)-->
+        <img src="sunport.jpeg" alt="sunport">
+     </div> 
+     <div class="product" onclick="lockPopup()">
+        <h2>Solar Bike Lock</h2>
+         <!-- This fulfills requirement 5.1 (b)-->
+        <img src="bikelock.jpg" alt="bike-lock">
+     </div>
+     <div class="product" onclick="bankPopup()">
+        <h2>Solar-Powered Bank</h2>
+         <!-- This fulfills requirement 5.1 (b)-->
+        <img src="powerbank.jpg" alt="power-bank">
+     </div>
+     <div class="product" onclick="camPopup()">
+        <h2>Solar Outdoor Security Camera</h2>
+         <!-- This fulfills requirement 5.1 (b)-->
+        <img src="soliom.jpg" alt="camera">
+     </div>
+     <div class="product" onclick="sensorPopup()">
+        <h2>Solar Motion Sensor</h2>
+        <!-- This fulfills requirement 5.1 (b)-->
+        <img src="sensor.jpg" alt="sensor">
+     </div>
+     <div class="product" onclick="panelPopup()">
+        <h2>Solar Generator and Panel</h2>
+         <!-- This fulfills requirement 5.1 (b)-->
+        <img src="panel.jpg" alt="panel">
+     </div>
+     <div class="product" onclick="kboardPopup()">
+        <h2>Solar Wireless Keyboard</h2>
+         <!-- This fulfills requirement 5.1 (b)-->
+        <img src="keyboard.png" alt="keyboard">
+     </div>
+     <div class="product" onclick="flightPopup()">
+        <h2>Solar Flashlight</h2>
+         <!-- This fulfills requirement 5.1 (b)-->
+        <img src="flashlight.jpg" alt="flashlight">
+     </div>
+     <div class="product" onclick="speakerPopup()">
+        <h2>Solar Bluetooth Speaker</h2>
+         <!-- This fulfills requirement 5.1 (b)-->
+        <img src="speaker.jpg" alt="speaker">
+     </div>
+    </div>
+        
+     <div id ="watchpopup" class="popup">
+         <span class = "close" onclick= "watchPopup()">&times;</span>
+         <p>Price: &yen;39.99</p>
+         <div class="description">
+             <p>A revolutionary watch that you can charge while you wear. The Timex Men's Expedition Gallatin Solar-Powered Watch has small solar panels enable it to run purely on solar, thus reducing battery waste and making a more convenient watch-experience for you.</p>
+         </div>
+         <div class="purchase-container">
+             <label for="quantity1">Quantity:</label>
+             <select id="quantity1">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+             </select>
+         </div>
+         <button class="purchase-button" onclick="purchase('quantity1')">Reserve</button>
+      </div>
+        
+      <div id="portpopup" class="popup">
+          <span class ="close" onclick="portPopup()">&times;</span>
+          <p>Price: &yen;27.99</p>
+          <div class="description">
+            <p>This to-go electric wall port is perfect for charging on a day-time flight or just simply out at a coffee shop window, this port will stick to any wall or window and, once exposed to sunlight, will provide you energy to charge your phone, computer, or anything else you need to charge on the go.</p>
+          </div>
+          <div class="purchase-container">
+              <label for="quantity2">Quantity:</label>
+              <select id="quantity2">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+          </div>
+          <button class="purchase-button" onclick="purchase('quantity2')">Reserve</button>
+       </div>
+    
+       <div id="lockpopup" class="popup">
+           <span class ="close" onclick="lockPopup()">&times;</span><p>Price: &yen;35.99</p>
+           <div class="description">
+               <p>This Bike Lock is made to keep your bike safe and secure. Charged by the sun the Lattis Ellipse Keyless Smart Solar Bike lock is made with 17mm forged steel and features a dual locking mechanism to fend off thieves. If someone tries to tamper with the bike lock, you'll receive an alert via Bluetooth on your phone. To remove the lock, just place your phone near it, and it will automatically unlock. There is a capacitive touchpad to enter a code as a backup as well.</p>
+           </div>
+           <div class="purchase-container">
+               <label for="quantity3">Quantity:</label>
+               <select id="quantity3">
+                   <option value="1">1</option>
+                   <option value="2">2</option>
+                   <option value="3">3</option>
+               </select>
+           </div>
+           <button class="purchase-button" onclick="purchase('quantity3')">Reserve</button>
+        </div>
+        
+        <div id="bankpopup" class="popup">
+            <span class="close" onclick="bankPopup()">&times;</span><p>Price: &yen;129.99</p>
+            <div class="description">
+                <p>This 20,00mAh YELOMIN Portable Solar-Powered Bank cell can completely recharge a smartphone three to five times depending on the model. Two built in USB output plugs to charge 2 phones simultaneously. When power bank is depleted just set it near a window to recharge. LED lights will indicate when the solar panel is working and the battery's status. Also sports a flashlight with three different modes for functionality.</p>
+            </div>
+            <div class="purchase-container">
+                <label for="quantity4">Quantity:</label>
+                <select id="quantity4">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </div>
+            <button class="purchase-button" onclick="purchase('quantity4')">Reserve</button>
+        </div>
+        
+        <div id="campopup" class="popup">
+            <span class="close" onclick="camPopup()">&times;</span><p>Price: &yen;199.99</p>
+            <div class="description">
+                <p>This completely wireless Soliom S60 Solar Outdoor Security Camera is made to withstand extreme temperature swings and is waterproof. When the camera detects motion, you'll receive a notification on your phone. Also, at night, built-in IR LED lights will help brighten up what's happening outside.</p>
+            </div>
+            <div class="purchase-container">
+                <label for="quantity5">Quantity:</label>
+                <select id="quantity5">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </div>
+            <button class="purchase-button" onclick="purchase('quantity5')">Reserve</button>
+        </div>
+        
+        <div id="sensorpopup" class="popup">
+            <span class="close" onclick="sensorPopup()">&times;</span><p>Price: &yen;52.99</p>
+            <div class="description">
+                <p>The LECLSTAR Solar Motion Sensor Outdoor Light is easy to mount with the included sticky pad or two screws. Waterproof and made to withstand all types of weather, the light features 268 bright LEDs that provide up to 1,800 lumens of light. The built-in motion sensor can detect movement up to 26 feet away and with a 120-degree field and will automatically turn on the light for 30 seconds. Will turn off automatically when no motion is detected.</p>
+            </div>
+            <div class="purchase-container">
+                <label for="quantity6">Quantity:</label>
+                <select id="quantity6">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </div>
+            <button class="purchase-button" onclick="purchase('quantity6')">Reserve</button>
+        </div>
+        
+        <div id="panelpopup" class="popup">
+            <span class="close" onclick="panelPopup()">&times;</span>
+            <p>Price: &yen;355.99</p>
+            <div class="description">
+                <p>The ACOPOWER 150Wh Portable Solar Generator with 50W Solar Panel Combo is a great way to harness solar power around the house. The generator sports two USB output plugs, two AC outlets, and three DC ports that can adapt to different equipment. While it won't power large home electronics, it can provide enough juice to charge electrics and operate smaller appliances like a fan or lamp. An included solar panel can completely charge the generator and its 40,800mAh battery in six to eight hours and folds up when not in use. The generator can also charge in a car or through a regular wall socket as well.</p>
+            </div>
+            <div class="purchase-container">
+                <label for="quantity7">Quantity:</label>
+                <select id="quantity7">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </div>
+            <button class="purchase-button" onclick="purchase('quantity7')">Reserve</button>
+        </div>
+        
+        <div id="kboardpopup" class="popup">
+            <span class="close" onclick="kboardPopup()">&times;</span><p>Price: &yen;49.99</p>
+            <div class="description">
+                <p>Logitech's K750 Solar Wireless Keyboard charges from the sun or artificial light and will keep a charge for up to three months in total darkness. Measuring in at just 1/3-inch thick, it can be used at home on any desk. Paired with being wireless it improves the usability of this product.</p>
+            </div>
+            <div class="purchase-container">
+                <label for="quantity8">Quantity:</label>
+                <select id="quantity8">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </div>
+            <button class="purchase-button" onclick="purchase('quantity8')">Reserve</button>
+        </div>
+        
+        <div id="flightpopup" class="popup">
+            <span class="close" onclick="flightPopup()">&times;</span><p>Price: &yen;119.99</p>
+            <div class="description">
+                <p>The Goal Zero Torch 250 Flashlight takes power from a built-in solar panel. If you can't get near the sun, there is a hand crank or USB cord to use as a backup. You can as well select from three different options on the 250-lumen flashlight, floodlight, or red emergency light. On a full charge, the flashlight can run for up to 48 hours. Furtehrmore, you can also charge a smartphone using the built-in USB plug.</p>
+            </div>
+            <div class="purchase-container">
+                <label for="quantity9">Quantity:</label>
+                <select id="quantity9">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </div>
+            <button class="purchase-button" onclick="purchase('quantity9')">Reserve</button>
+        </div>
+    
+        <div id="speakerpopup" class="popup">
+            <span class="close" onclick="speakerPopup()">&times;</span>
+            <p>Price: &yen;219.99</p>
+            <div class="description">
+                <p>The Eton Rugged Rukus Solar Powered Wireless Bluetooth Speaker is highly portable and stores enough power to play music for eight hours on a full charge. The solar panel fully charges the speaker in less than five hours of direct sunlight.It will also charge your smartphone via the USB port. The speaker is as well water-resistant, making it great for poolside listening and social events.</p>
+            </div>
+            <div class="purchase-container">
+                <label for="quantity10">Quantity:</label>
+                <select id="quantity10">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </div>
+            <button class="purchase-button" onclick="purchase('quantity10')">Reserve</button>
+        </div>
+
+    <footer id="footer">
+              <!-- This fulfills requirement 5.1 (d)-->
+            &copy;&nbsp; 2001-2023. The Solar House. All Rights Reserved. &nbsp;&copy;
+        
+         <!-- This fulfills requirement 5.1 (f)-->
+            <div class="footer-links">
+                <a href="tel: +1 778-512-4454">Call Us</a>
+                <a href="mailto: gabrieleremie100@gmail.com">Email Us</a>
+            </div>
+              <!-- This fulfills requirement 5.1 (g)-->
+        <span id="update-date"></span>
+    </footer>
+    <script>
+        const lastUpdatedElement = document.getElementById('update-date');
+        const siteFooter = document.getElementById('footer');
+            
+        const lastUpdateDate = new Date().toLocaleDateString('en-US', {year: 'numeric', month: 'long', day: 'numeric'});
+        lastUpdatedElement.textContent = lastUpdateDate;
+    </script>
+    
+    <!-- This fulfills requirement 5.6 (c)-->
+    <script>
+        function purchase(quantityId) {
+            const quantity = document.getElementById(quantityId).value;
+            alert(`${quantity} of these product(s) will be reserved for you!`);
+        }
+        function watchPopup() {
+            var popup = document.getElementById("watchpopup");
+            if (popup.style.display === "block") {
+              popup.style.display = "none";
+            } else {
+              popup.style.display = "block";
+            }
+        }
+        function portPopup() {
+            var popup = document.getElementById("portpopup");
+            if (popup.style.display === "block") {
+              popup.style.display = "none";
+            } else {
+              popup.style.display = "block";
+            }
+        }
+        function lockPopup() {
+            var popup = document.getElementById("lockpopup");
+            if (popup.style.display === "block") {
+              popup.style.display = "none";
+            } else {
+              popup.style.display = "block";
+            } 
+        }
+        function bankPopup() {
+            var popup = document.getElementById("bankpopup");
+            if (popup.style.display === "block") {
+              popup.style.display = "none";
+            } else {
+              popup.style.display = "block";
+            }
+        }
+        function camPopup() {
+            var popup = document.getElementById("campopup");
+            if (popup.style.display === "block") {
+              popup.style.display = "none";
+            } else {
+              popup.style.display = "block";
+            }
+        }
+        function sensorPopup() {
+            var popup = document.getElementById("sensorpopup");
+            if (popup.style.display === "block") {
+              popup.style.display = "none";
+            } else {
+              popup.style.display = "block";
+            }
+        }
+        function panelPopup() {
+            var popup = document.getElementById("panelpopup");
+            if (popup.style.display === "block") {
+              popup.style.display = "none";
+            } else {
+              popup.style.display = "block";
+            } 
+        }
+        function speakerPopup() {
+            var popup = document.getElementById("speakerpopup");
+            if (popup.style.display === "block") {
+              popup.style.display = "none";
+            } else {
+              popup.style.display = "block";
+            }
+        }
+        function kboardPopup() {
+            var popup = document.getElementById("kboardpopup");
+            if (popup.style.display === "block") {
+              popup.style.display = "none";
+            } else {
+              popup.style.display = "block";
+            }
+        }
+        function flightPopup() {
+            var popup = document.getElementById("flightpopup");
+            if (popup.style.display === "block") {
+              popup.style.display = "none";
+            } else {
+              popup.style.display = "block";
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+      <!-- This fulfills requirement 5.1 (e)-->
+   <meta charset="utf-8" />
+   <meta name="description" content="Solar Energy Charities">
+   <meta name= "author" content= "Gabriel Eremie">
+   <meta name = "keywords" content= "Solar, Energy, Technology"/>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Solar House Charity</title>
+   
+   <link href="charity.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+            <div>
+                <!-- This fulfills requirement 5.1 (b)-->
+                <a href = "index.html"><img src = "thesolarhouse.png" alt = "The Solar House" class= "logo"/></a>
+                <nav class="container">
+                    <ul class= "container">
+                        <li><a href ="index.html" class= "container">Home</a></li>
+                        <li><a href ="products.html" class= "container">Products</a></li>
+                        <li><a href ="offers.html" class= "container">Offers</a></li>
+                        <li><a href ="charity.html" class= "container">Charity</a></li>
+                        <li><a href ="crossreference.html" class= "container">Cross Reference</a></li>
+                    </ul>
+                </nav>
+            </div>
+    </header>
+    
+    <div class="image-container">
+        <img src="solarcharity.jpg" alt="Charity Image">
+    </div>
+
+
+    
+    <article>
+        <section>
+            <div class = "title">
+                <h1>Solar Energy Charities</h1>
+            </div>
+               <!-- This fulfills requirement 5.4 (a)-->
+             <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>RE-volv</td>
+                    <td>RE-volv raises money through crowdfunding campaigns, to build solar projects for community-serving nonprofits. As the organizations repay RE-volv for the loan, it pays you back in the form of a portfolio credit that can then be used to invest in more solar projects. It’s a “pay-it-forward model for solar energy.” To date, the organization has installed 10 solar projects and has been backed by nearly 1,000 people. Help bring solar to an underserved community today!</td>
+                </tr>
+                <tr>
+                    <td>GRID Alternatives</td>
+                    <td>GRID works nationwide to provide low income homeowners and nonprofits with free solar installations. They have installed over 36 MegaWatts of solar nationwide and continue to be an advocate for bringing solar to underserved communities. Not only does GRID install solar, they also provide invaluable workforce development through installation training programs, SolarCorps Fellowships, and its “Troops to Solar” program. GRID has 14 locations nationally and internationally and is always accepting volunteers!</td>
+                </tr>
+                <tr>
+                    <td>Vote Solar</td>
+                    <td>Vote Solar has a mission of bringing solar energy to the mainstream, by advocating for solar energy policy reform at the state level. It has been instrumental in the development of numerous policies regarding net metering that can be used across the industry to fairly value solar energy compensation. It's advocacy has also spurred interest from local governments on the topics of community solar adoption, modern energy grid development, and low-income solar access as well!</td>
+                </tr>
+                <tr>
+                    <td>We Care Solar</td>
+                    <td>We Care Solar was founded in 2009 by Dr. Laurel Scatchel. During a visit to Nigeria, she witnessed a high maternal mortality rate due to lack of proper lighting in medical facilities. She worked with her husband, a solar energy educator, to create a prototype for what would soon become the Solar Suitcase. Every portable Solar Suitcase provides health workers with a reliable source of power and highly efficient lighting. As of December 2016, 2,260 health centers were equipped with solar lighting and over 1 million newborns were delivered in Solar Suitcase facilities too!</td>
+                </tr>
+                <tr>
+                    <td>Everybody Solar</td>
+                    <td>Everybody Solar works to protect the environment through solar energy projects. It provides solar power to local charities to help them reduce their electricity costs. These solar energy savings can equate to thousands of dollars that can be put towards the communities they serve instead of pricey electric bills. It currently has four live projects that are in need of funding, including the Lakota Nation Youth Center in South Dakota. The Center also provides shelter, food, and support services for youth in need in their community!</td>
+                </tr>
+                <tr>
+                    <td>The Solar Foundation</td>
+                    <td>The mission of the Solar Foundation is to accelerate adoption of the world’s most abundant energy source, solar energy! The Solar Foundation continues to deliver high quality studies related to jobs and diversity in the solar sector. One of its’ most notable programs, Solar Ready Vets, provides training, hands on experience, and job placement assistance for transitioning military personnel!</td>
+                </tr>
+            </table>
+        </section>
+    </article>
+        
+        <p>Choose from one or more of these charities, because, with your donations it would enable the goals of all these solar projects to come to fruition and take us one step closer to a <strong>BRIGHTER</strong> and <strong>BETTER</strong> future!</p>
+
+    <form action="/process-donation" method="post" onsubmit="return validateDonationForm();">
+    <h1 class = " donate">DONATE</h1>
+    <label for="fullName">Full Name:</label>
+    <input type="text" id="fullName" name="fullName" required>
+
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" required>
+        
+    <label for="charity">Charity Name:</label>
+    <input type="text" id="charity" name="charity" required>
+        
+    <label for="paymentAmount">Donation Amount:</label>
+    <input type="number" id="paymentAmount" name="paymentAmount" required>
+
+    <label for="paymentFrequency">Payment Frequency:</label>
+    <select id="paymentFrequency" name="paymentFrequency">
+        <option value="one-time">One-time</option>
+        <option value="monthly">Monthly</option>
+        <option value="yearly">Yearly</option>
+    </select>
+
+    <label for="comments">Additional Comments or Messages:</label>
+    <textarea id="comments" name="comments" rows="4"></textarea>
+
+    <label for="subscribeNewsletter">Subscribe to the Newsletter</label>
+    <input type="checkbox" id="subscribeNewsletter" name="subscribeNewsletter">
+
+    <label for="termsConditions">  I agree to the Terms and Conditions</label>
+    <input type="checkbox" id="termsConditions" name="termsConditions" required>
+
+    <button type="submit" onclick="showAlert()" class="donate1">Donate</button></form>
+
+    <footer id="footer">
+        &copy;&nbsp; 2001-2023. The Solar House. All Rights Reserved. &nbsp;&copy;<!-- This fulfills requirement 5.1 (d)-->
+        <!-- This fulfills requirement 5.1 (f)-->
+        <div class="footer-links">
+            <a href="tel: +1 778-512-4454">Call Us</a>
+            <a href="mailto: gabrieleremie100@gmail.com">Email Us</a>
+        </div>
+        <span id="update-date"></span>
+        <!-- This fulfills requirement 5.1 (g)-->
+    </footer>
+    <script>
+        const lastUpdatedElement = document.getElementById('update-date');
+        const siteFooter = document.getElementById('footer');
+            
+        const lastUpdateDate = new Date().toLocaleDateString('en-US', {year: 'numeric', month: 'long', day: 'numeric'});
+        lastUpdatedElement.textContent = lastUpdateDate;
+    </script>
+    <script>
+        function showAlert() {
+            window.alert('You have donated money to a charity!');
+        }
+    </script>
+       <!-- This fulfills requirement 5.6(b)-->
+     <script>
+        function validateDonationForm() {
+            const fullName = document.getElementById('fullName').value;
+            const email = document.getElementById('email').value;
+            const charity = document.getElementById('charity').value;
+            const paymentAmount = document.getElementById('paymentAmount').value;
+            const paymentFrequency = document.getElementById('paymentFrequency').value;
+            const termsConditions = document.getElementById('termsConditions').checked;
+
+            if (fullName.trim() === "") {
+                alert("Please enter your full name.");
+                return false;
+            }
+
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                alert("Please enter a valid email address.");
+                return false;
+            }
+            if (charity.trim() === "") {
+                alert("Please enter the charity name.");
+                return false;
+            }
+
+            if (isNaN(parseFloat(paymentAmount)) || parseFloat(paymentAmount) <= 0) {
+                alert("Please enter a valid donation amount.");
+                return false;
+            }
+
+            if (!termsConditions) {
+                alert("Please accept the Terms and Conditions.");
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+    
+</body> 
+</html>

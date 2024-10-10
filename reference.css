@@ -1,0 +1,87 @@
+@charset "utf-8";
+
+body{
+    background-image: url(bi.png);   /* This fulfills requirement 5.1 (c)*/
+    margin: 0;
+    font-weight: 100;
+    background-size: contain;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 30%;
+}
+
+.container { 
+  text-align: center;
+}
+
+/*This fulfills requirement 5.2 (d)*/
+.container:link{
+    color: rgba(12,62,101,1);
+}
+
+.container:visited{
+    color: rgba(12,62,101,1);
+}
+
+.container:hover{
+    color: rgb(253,255,45);
+}
+
+.container:focus{
+    color: rgb(253,255,45);
+}
+
+.container:active{
+    color: rgb(253,255,45);
+}
+
+.container li {
+    display: inline-block;
+    margin: 0;
+    margin-right: 10px;
+    margin-left: auto;
+}
+
+.container a{
+    text-decoration: none;
+} 
+
+ table {
+     width: 80%;
+     margin: 2em auto;
+     border-collapse: collapse;
+}
+
+th, td {
+    border: 1px double #083b66;
+    padding: 5px;
+    text-align: left;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: rgba(12,62,101,1); 
+}
+
+a:visited {
+    color: rgba(12,62,101,1);
+}
+
+a:hover {
+    color: rgb(253,255,45) ;
+}
+
+a:active {
+    color: rgb(253,255,45); 
+}
+
+
